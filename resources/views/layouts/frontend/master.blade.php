@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Home 1</title>
-    <meta name="author" content="vecuro">
-    <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
-    <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
+    <title>OPL - OHM pharmaceuticals | OHM pharmaceuticals | Home </title>
+    <meta name="author" content="OPL - OHM pharmaceuticals">
+    <meta name="description" content="OPL - OHM pharmaceuticals">
+    <meta name="keywords" content="OPL - OHM pharmaceuticals" />
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

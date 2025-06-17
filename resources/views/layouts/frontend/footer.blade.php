@@ -7,7 +7,7 @@
                     <div class="widget footer-widget">
                         <div class="vs-widget-about">
                             <div class="footer-logo">
-                                <a href="index.html"><img class="logo" src="frontend/assets/img/logo.png"
+                                <a href="#"><img class="logo" src="frontend/assets/img/logoo.jpg"
                                         alt="Cannabo"></a>
                             </div>
                             <p class="footer-text">Aliquet eget sit amet tellus cras adipiscing
@@ -32,7 +32,7 @@
                             </div>
                             <div class="media-body">
                                 <div class="footer-info__link pe-xl-5">
-                                    <p>New Town Western King Street, 5th Avenue, New York</p>
+                                    <p>Babu Ram Acharya Marg(Corporate Office ), Sinamangal Kathmandu</p>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="media-body">
                                 <span class="footer-info__label">Phone No:</span>
                                 <div class="footer-info__link">
-                                    <a href="tel:+1800-2355-2356">1800-2355-2356</a>
+                                    <a href="tel:01-4110761">01-4110761</a>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                             <div class="media-body">
                                 <span class="footer-info__label">Email Address:</span>
                                 <div class="footer-info__link">
-                                    <a href="mailto:username@domain.com">username@domain.com</a>
+                                    <a href="mailto:info@opl.com.np">info@opl.com.np</a>
                                 </div>
                             </div>
                         </div>
@@ -69,15 +69,15 @@
                         <h3 class="widget_title">Useful Links</h3>
                         <div class="footer-menu--style">
                             <ul>
-                                <li><a href="about.html">Our Process</a></li>
-                                <li><a href="index.html">Payments</a></li>
-                                <li><a href="contact.html">Special Offers</a></li>
-                                <li><a href="faq.html">Shipping</a></li>
-                                <li><a href="blog.html">Regulations</a></li>
-                                <li><a href="index-2.html">Product Returns</a></li>
-                                <li><a href="contact.html">About Us</a></li>
-                                <li><a href="project.html">FAQ</a></li>
-                                <li><a href="services.html">Our Team</a></li>
+                                <li><a href="#">Our Process</a></li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Special Offers</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Regulations</a></li>
+                                <li><a href="#">Product Returns</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Our Team</a></li>
                             </ul>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
             </div>
         </div>
     </div>
-    <div class="newsletter-form">
+    {{-- <div class="newsletter-form">
         <div class="container">
             <form action="https://html.vecurosoft.com/cannabo/demo/mail.php">
                 <div class="row g-4 justify-content-center justify-content-lg-between align-items-center">
@@ -109,26 +109,26 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> --}}
     <div class="copyright-wrap">
         <div class="container">
             <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
                 <div class="col-lg-auto">
-                    <p class="copyright-text text-center text-lg-start">Copyright © <a href="index.html">Cannabo
-                            2024</a> . All
-                        rights reserved. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                    <p class="copyright-text text-center text-lg-start">Copyright © <a href="#">OPL
+                            2025</a> . All
+                        rights reserved. <a href="https://paradiseit.com.np/">ParadiseIT</a></p>
                 </div>
-                <div class="col-lg-auto">
+                {{-- <div class="col-lg-auto">
                     <div class="footer-payment">
                         <img src="frontend/assets/img/others/payment.png" alt="payment">
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-lg-auto">
                     <div class="widget widget_nav_menu footer-widget">
                         <div class="menu-all-pages-container">
                             <ul class="menu justify-content-center justify-content-lg-end ">
-                                <li><a href="contact.html">Terms and Conditions</a></li>
-                                <li><a href="contact.html">Privacy Policy</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>

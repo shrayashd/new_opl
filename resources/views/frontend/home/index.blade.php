@@ -19,17 +19,17 @@
                     <div class="row gy-4 justify-content-between align-items-center">
                         <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
                             <div class="hero-content">
-                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">High-Quality CBD Guernsey</h1>
+                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">High-Quality Guernsey</h1>
                                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s">
                                     Working with a global network of wellbeing enthusiasts and health experts
                                 </p>
                                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                                     <img src="{{ asset('frontend/assets/img/icons/i-1-1.png') }}" alt="icon">
-                                    1000MG, Whole Plant Hemp Extract.
+                                    1000MG, Whole Plant Extract.
                                 </span>
                                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                                    <a class="vs-btn style1" href="{{ url('products-grid') }}">
-                                        Start Shopping <i class="fas fa-long-arrow-right"></i>
+                                    <a class="vs-btn style1" href="#">
+                                        Explore More <i class="fas fa-long-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -54,18 +54,18 @@
                     <div class="row gy-4 justify-content-between align-items-center">
                         <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
                             <div class="hero-content">
-                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Pure CBD Extracted from Swiss Alps
+                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Pure Extracted from Swiss Alps
                                 </h1>
                                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s">
                                     Working with a global network of wellbeing enthusiasts and health experts
                                 </p>
                                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                                     <img src="{{ asset('frontend/assets/img/icons/i-1-1.png') }}" alt="icon">
-                                    1000MG, Whole Plant Hemp Extract.
+                                    1000MG, Whole Plant Extract.
                                 </span>
                                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                                     <a class="vs-btn style1" href="{{ url('products-grid') }}">
-                                        Start Shopping <i class="fas fa-long-arrow-right"></i>
+                                        Start Exploring <i class="fas fa-long-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -90,18 +90,18 @@
                     <div class="row gy-4 justify-content-between align-items-center">
                         <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
                             <div class="hero-content">
-                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Superior Hemp Grown in Oregon's
+                                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Superior Grown in Oregon's
                                 </h1>
                                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s">
                                     Working with a global network of wellbeing enthusiasts and health experts
                                 </p>
                                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                                     <img src="{{ asset('frontend/assets/img/icons/i-1-1.png') }}" alt="icon">
-                                    1000MG, Whole Plant Hemp Extract.
+                                    1000MG, Whole Plant Extract.
                                 </span>
                                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                                    <a class="vs-btn style1" href="{{ url('products-grid') }}">
-                                        Start Shopping <i class="fas fa-long-arrow-right"></i>
+                                    <a class="vs-btn style1" href="#">
+                                        Explore More <i class="fas fa-long-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -135,127 +135,66 @@
                         <div class="sec-icon">
                             <img src="{{ asset('frontend/assets/img/icons/s-1-1.png') }}" alt="icon">
                         </div>
-                        <span class="sec-subtitle">browser category</span>
+                        <span class="sec-subtitle">Browser Category</span>
                         <h2 class="sec-title">Pick Your Product Type</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="row vs-carousel" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3"
-                data-dots="true">
-
-                {{-- Category 1 --}}
+            <div class="row justify-content-center">
                 <div class="col-auto">
-                    <div class="cate-style">
+                    <div class="cate-style text-center">
                         <div class="cate-figure">
                             <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-1.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
                             <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Oil</a>
+                                <a class="cate-title__link" href="#">UROLOGY</a>
                             </h3>
                             <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">12 Products</a>
+                                <a class="cate-num__link" href="#">12 Products</a>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                {{-- Category 2 --}}
                 <div class="col-auto">
-                    <div class="cate-style">
+                    <div class="cate-style text-center">
                         <div class="cate-figure">
                             <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-2.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
                             <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Gummies</a>
+                                <a class="cate-title__link" href="#">HORMONES</a>
                             </h3>
                             <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">24 Products</a>
+                                <a class="cate-num__link" href="#">24 Products</a>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                {{-- Category 3 --}}
                 <div class="col-auto">
-                    <div class="cate-style">
+                    <div class="cate-style text-center">
                         <div class="cate-figure">
                             <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-3.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
                             <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Kits</a>
+                                <a class="cate-title__link" href="#">GENERAL</a>
                             </h3>
                             <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">35 Products</a>
+                                <a class="cate-num__link" href="#">35 Products</a>
                             </span>
                         </div>
                     </div>
                 </div>
-
-                {{-- Category 4 --}}
-                <div class="col-auto">
-                    <div class="cate-style">
-                        <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-4.png') }}"
-                                alt="cate image">
-                        </div>
-                        <div class="cate-content">
-                            <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Capsules</a>
-                            </h3>
-                            <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">12 Products</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Category 5 --}}
-                <div class="col-auto">
-                    <div class="cate-style">
-                        <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-5.png') }}"
-                                alt="cate image">
-                        </div>
-                        <div class="cate-content">
-                            <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Cosmetics</a>
-                            </h3>
-                            <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">12 Products</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Category 6 (duplicate of 2) --}}
-                <div class="col-auto">
-                    <div class="cate-style">
-                        <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-2.png') }}"
-                                alt="cate image">
-                        </div>
-                        <div class="cate-content">
-                            <h3 class="cate-title">
-                                <a class="cate-title__link" href="{{ url('services') }}">CBD Oil</a>
-                            </h3>
-                            <span class="cate-num">
-                                <a class="cate-num__link" href="{{ url('services') }}">12 Products</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-
     <!-- Category Area End -->
     <!-- About Area Start  -->
     <!-- About Area Start -->
@@ -272,7 +211,7 @@
                         <div class="video-thumb1">
                             <img class="img" src="{{ asset('frontend/assets/img/about/about-1-2.jpg') }}"
                                 alt="about 2 2">
-                            <a class="play-btn style7 popup-video" href="https://www.youtube.com/watch?v=zX-jSCDsJ8E"
+                            <a class="play-btn style7 popup-video" href="https://www.youtube.com/watch?v=bJNLrJ7MUzM"
                                 tabindex="0">
                                 <i class="fas fa-play"></i>
                             </a>
@@ -282,7 +221,7 @@
                 <div class="col-lg-6 mb-30">
                     <div class="about-content1">
                         <div class="title-area">
-                            <span class="sec-subtitle">Welcome to Canobbo</span>
+                            <span class="sec-subtitle">Welcome to OHM Pharmaceuticals</span>
                             <h2 class="sec-title">We Provide High Quality And Certified Products</h2>
                         </div>
                         <div class="about-body">
@@ -297,7 +236,7 @@
                                     <li>
                                         <i><img src="{{ asset('frontend/assets/img/icons/shield.png') }}"
                                                 alt="shield"></i>
-                                        100% Cannabis Oil
+                                        100% Tested
                                     </li>
                                     <li>
                                         <i><img src="{{ asset('frontend/assets/img/icons/marijuana.png') }}"
@@ -333,9 +272,9 @@
                                     </div>
                                 </div>
                                 <div class="review-content__right">
-                                    <h2 class="review-title h3">No.1 CBD Specialist</h2>
+                                    <h2 class="review-title h3">No.1 ABCD Specialist</h2>
                                     <p class="review-text">
-                                        CBD oils, joint & muscle rubs, skin care & cosmetics, edibles, drinks,
+                                        ABC oils, joint & muscle rubs, skin care & cosmetics, edibles, drinks,
                                         e-liquids, concentrates & isolates, vapes & more…
                                     </p>
                                 </div>
@@ -377,14 +316,14 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="vs-product product-style1">
                             <div class="product-img">
-                                <a href="shop-details.html">
+                                <a href="#">
                                     <img class="img w-100"
                                         src="{{ asset('frontend/assets/img/products/p-1-' . $i . '.png') }}"
                                         alt="Product Image {{ $i }}">
                                 </a>
 
                                 @if (in_array($i, [1, 3, 5, 7]))
-                                    <a class="product-tag2" href="shop-details.html">
+                                    <a class="product-tag2" href="#">
                                         {{ $i === 1 ? '30% OFF' : 'Out of Stock' }}
                                     </a>
                                 @endif
@@ -430,14 +369,14 @@
                 <div class="col-xl-7 col-lg-8">
                     <div class="title-area">
                         <span class="sec-subtitle">What Makes Different?</span>
-                        <h2 class="sec-title">What Makes Canobbo CBD Different?</h2>
+                        <h2 class="sec-title">What Makes OHM pharmaceuticals Different?</h2>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="call-card">
                         <div class="call-card__content">
                             <span class="call-card__title">Need Help?</span>
-                            <a class="call-card__number" href="tel:+12345 56535">+12345 56535</a>
+                            <a class="call-card__number" href="tel:01-4110761">01-4110761</a>
                         </div>
                         <div class="call-card__icon">
                             <img src="{{ asset('frontend/assets/img/icons/phone-1-1.png') }}" alt="phone icon">
@@ -555,11 +494,11 @@
                             <div class="col-auto">
                                 <div class="banner-content">
                                     <h3 class="banner-title">
-                                        <a href="about.html">Skincare & Topicals</a>
+                                        <a href="#">Skincare & Topicals</a>
                                     </h3>
                                     <p class="banner-text">Sed ut perspiciatis unde omnis
                                         is tus error sit voluptatem</p>
-                                    <a class="banner-link" href="about.html">
+                                    <a class="banner-link" href="#">
                                         View More
                                         <img src="{{ asset('frontend/assets/img/icons/arrow-icon-1-1.png') }}"
                                             alt="arrow icon">
@@ -582,7 +521,7 @@
                                     </h3>
                                     <p class="banner-text">Sed ut perspiciatis unde omnis
                                         is tus error sit voluptatem</p>
-                                    <a class="banner-link" href="about.html">
+                                    <a class="banner-link" href="#">
                                         View More
                                         <img src="{{ asset('frontend/assets/img/icons/arrow-icon-1-1.png') }}"
                                             alt="arrow icon">
@@ -613,49 +552,49 @@
             <div class="row vs-carousel text-center" data-slide-show="6" data-md-slide-show="3">
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-1.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-2.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-3.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-4.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-5.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-6.png') }}" alt="brand">
                         </a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="brand-style">
-                        <a href="about.html">
+                        <a href="#">
                             <img src="{{ asset('frontend/assets/img/brand/brand-1-1.png') }}" alt="brand">
                         </a>
                     </div>
@@ -911,7 +850,7 @@
                         <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                             <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
                         </div>
-                        <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
+                        <span class="testi-author">By <a href="#">Shrayash Dotel</a></span>
                         <h3 class="testi-title">Best Protein i have Ever</h3>
                         <div class="testi-content">
                             <div class="testi-image">
@@ -922,7 +861,7 @@
                                         alt="testimonials icon">
                                 </i>
                             </div>
-                            <p class="testi-text">I've been taking CBD oil now for 2 years.
+                            <p class="testi-text">I've been taking now for 2 years.
                                 Searched lots of sites and was absolutely
                                 blown away by the reviews of Cannaray oil.
                                 The information and range of high-quality
@@ -936,8 +875,8 @@
                         <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                             <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
                         </div>
-                        <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
-                        <h3 class="testi-title">Best-Tasting CBD Oil Ever</h3>
+                        <span class="testi-author">By <a href="#">Shrayash Dotel</a></span>
+                        <h3 class="testi-title">Best-Tasting Food Ever</h3>
                         <div class="testi-content">
                             <div class="testi-image">
                                 <img class="img1" src="{{ asset('frontend/assets/img/testimonials/testi-1-2.png') }}"
@@ -947,7 +886,7 @@
                                         alt="testimonials icon">
                                 </i>
                             </div>
-                            <p class="testi-text">I've been taking CBD oil now for 2 years.
+                            <p class="testi-text">I've been taking oil now for 2 years.
                                 Searched lots of sites and was absolutely
                                 blown away by the reviews of Cannaray oil.
                                 The information and range of high-quality
@@ -961,7 +900,7 @@
                         <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                             <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
                         </div>
-                        <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
+                        <span class="testi-author">By <a href="#">Shrayash Dotel</a></span>
                         <h3 class="testi-title">Best Protein i have Ever</h3>
                         <div class="testi-content">
                             <div class="testi-image">
@@ -972,7 +911,7 @@
                                         alt="testimonials icon">
                                 </i>
                             </div>
-                            <p class="testi-text">I've been taking CBD oil now for 2 years.
+                            <p class="testi-text">I've been taking oil now for 2 years.
                                 Searched lots of sites and was absolutely
                                 blown away by the reviews of Cannaray oil.
                                 The information and range of high-quality
@@ -1011,12 +950,12 @@
                         <span class="blog-date">24 <span>Feb, 2022</span></span>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
+                                <a href="blog.html" tabindex="0">Posted <span>By ABC</span></a>
                                 <a class="blog-meta-icon" href="blog.html" tabindex="0"><i
                                         class="fas fa-comments"></i> 14 Comments</a>
                             </div>
                             <h3 class="blog-title h5">
-                                <a href="blog-details.html" tabindex="0">
+                                <a href="#" tabindex="0">
                                     Options For a Cannabis Education in All Countries
                                 </a>
                             </h3>
@@ -1032,12 +971,12 @@
                         <span class="blog-date">24 <span>Feb, 2022</span></span>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
+                                <a href="blog.html" tabindex="0">Posted <span>By ABC</span></a>
                                 <a class="blog-meta-icon" href="blog.html" tabindex="0"><i
                                         class="fas fa-comments"></i> 14 Comments</a>
                             </div>
                             <h3 class="blog-title h5">
-                                <a href="blog-details.html" tabindex="0">
+                                <a href="#" tabindex="0">
                                     How Does A Lotion Containing CBD Help Your Skin?
                                 </a>
                             </h3>
@@ -1053,9 +992,9 @@
                         <span class="blog-date">24 <span>Feb, 2022</span></span>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
-                                <a class="blog-meta-icon" href="blog.html" tabindex="0"><i
-                                        class="fas fa-comments"></i> 14 Comments</a>
+                                <a href="blog.html" tabindex="0">Posted <span>By ABC</span></a>
+                                <a class="blog-meta-icon" href="#" tabindex="0"><i class="fas fa-comments"></i>
+                                    14 Comments</a>
                             </div>
                             <h3 class="blog-title h5">
                                 <a href="blog-details.html" tabindex="0">
@@ -1069,7 +1008,7 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="d-inline-flex pt-30">
-                        <a class="vs-btn style2" href="blog.html">View All Blog</a>
+                        <a class="vs-btn style2" href="#">View All Blog</a>
                     </div>
                 </div>
             </div>
