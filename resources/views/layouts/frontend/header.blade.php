@@ -4,10 +4,11 @@
         <div class="container">
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-auto flex-grow-1 d-none d-lg-block">
-                    <p class="header-text">
-                        <i><img src="frontend/assets/img/icons/free-delivery.png" alt=""></i>
-                        Free next day delivery when you <span>spend over Rs 4000</span>
-                    </p>
+                    <div class="header-call">
+                        <i><img src="frontend/assets/img/icons/customer-service.png" alt="customer-service"></i>
+                        <span>Need Help?</span>
+                        <a href="tel:01-4110761">01-4110761</a>
+                    </div>
                 </div>
                 <div class="col-lg-auto">
                     <div class="header-social">
@@ -17,15 +18,12 @@
                     </div>
                 </div>
                 <div class="col-lg-auto d-none d-xl-block">
-                    <div class="header-call">
-                        <i><img src="frontend/assets/img/icons/customer-service.png" alt="customer-service"></i>
-                        <span>Need Help?</span>
-                        <a href="tel:01-4110761">01-4110761</a>
-                    </div>
+                    <!-- You can remove this block if it's now duplicated -->
                 </div>
             </div>
         </div>
     </div>
+
     <div class="sticky-wrapper">
         <div class="sticky-active">
             <div class="container">
