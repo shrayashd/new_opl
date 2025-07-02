@@ -4,11 +4,11 @@
         <div class="hero-bg" style="background-image: url('{{ asset('frontend/assets/img/bg/b-1-1.png') }}');"></div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
-            <img src="{{ asset('frontend/assets/img/hero/h-1-3.png') }}" alt="hero leaf 2">
+            <img src="{{ asset('frontend/assets/img/hero/topp.png') }}" alt="hero leaf 2">
         </div>
 
         <div class="hero-leaf3 wow fadeInUp" data-wow-delay="1.2s">
-            <img src="{{ asset('frontend/assets/img/hero/h-1-4.png') }}" alt="hero leaf 3">
+            <img src="{{ asset('frontend/assets/img/hero/med.png') }}" alt="hero leaf 3">
         </div>
 
         <div class="container">
@@ -179,7 +179,7 @@
                 <div class="col-auto">
                     <div class="cate-style text-center">
                         <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-3.png') }}"
+                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/general.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
