@@ -39,7 +39,7 @@
                                 <img src="{{ asset('frontend/assets/img/hero/h-1-1.png') }}" alt="hero image 1">
                                 <span class="circle"></span>
                                 <div class="hero-certificate">
-                                    <img src="{{ asset('frontend/assets/img/logos/l-1-1.png') }}" alt="logo">
+                                    <img src="{{ asset('frontend/assets/img/logos/roundd.png') }}" alt="logo">
                                 </div>
                                 <div class="hero-leaf">
                                     <img src="{{ asset('frontend/assets/img/hero/h-1-2.png') }}" alt="">
