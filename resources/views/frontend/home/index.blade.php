@@ -145,7 +145,7 @@
                 <div class="col-auto">
                     <div class="cate-style text-center">
                         <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/uro.png') }}"
+                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/try.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
@@ -162,7 +162,7 @@
                 <div class="col-auto">
                     <div class="cate-style text-center">
                         <div class="cate-figure">
-                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/c-1-2.png') }}"
+                            <img class="cate-img" src="{{ asset('frontend/assets/img/cate/hormones.png') }}"
                                 alt="cate image">
                         </div>
                         <div class="cate-content">
