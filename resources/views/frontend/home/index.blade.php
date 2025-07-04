@@ -1,7 +1,8 @@
 @extends('layouts.frontend.master')
 @section('content')
     <section class="hero-style1">
-        <div class="hero-bg" style="background-image: url('{{ asset('frontend/assets/img/bg/bg3.jpg') }}');"></div>
+        <div class="hero-bg" style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
+                .jpg') }}');"></div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
             <img src="{{ asset('frontend/assets/img/hero/topp.png') }}" alt="hero leaf 2">
