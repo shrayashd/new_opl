@@ -1,8 +1,10 @@
 @extends('layouts.frontend.master')
 @section('content')
     <section class="hero-style1">
-        <div class="hero-bg" style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                .jpg') }}');"></div>
+        <div class="hero-bg"
+            style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
+                                    .jpg') }}');">
+        </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
             <img src="{{ asset('frontend/assets/img/hero/topp.png') }}" alt="hero leaf 2">
@@ -26,7 +28,7 @@
                                 </p>
                                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                                     <img src="{{ asset('frontend/assets/img/icons/i-1-1.png') }}" alt="icon">
-                                    1000MG, Whole Plant Extract.
+                                    1000MG, Whole Extract.
                                 </span>
                                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                                     <a class="vs-btn style1" href="#">
