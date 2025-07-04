@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                    .jpg') }}');">
+                                                            .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -249,7 +249,7 @@
                                     <li>
                                         <i><img src="{{ asset('frontend/assets/img/icons/microscope.png') }}"
                                                 alt="microscope"></i>
-                                        Third Party Lab Tested
+                                        Party Lab Tested
                                     </li>
                                 </ul>
                             </div>
