@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                        .jpg') }}');">
+                                                                                                                                                                                    .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -173,7 +173,7 @@
                                 <a class="cate-title__link" href="#">HORMONES</a>
                             </h3>
                             <span class="cate-num">
-                                <a class="cate-num__link" href="#">12 Products</a>
+                                <a class="cate-num__link" href="#">10 Products</a>
                             </span>
                         </div>
                     </div>
