@@ -34,3 +34,5 @@ Route::get('/services/{slug}', [FrontendController::class, 'servicesingle'])->na
 
 Route::post('/inquiry', [ContactsController::class, 'inquiry'])->name('inquiry');
 Route::get('/search/autocomplete', [FrontendController::class, 'autocompleteSearch'])->name('autocompleteSearch');
+
+
