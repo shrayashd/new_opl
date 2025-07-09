@@ -56,42 +56,89 @@ class MediaController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        if ($request->hasFile('file')) {
-            $image = $request->file('file');
-            $name = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
-            $extension = $image->getClientOriginalExtension();
-            $slugify = make_slug($name);
-            $image_new_name = $slugify . '.' . $extension;
-    
-            $image->move(public_path('storage/'), $image_new_name);
-            $filePath = 'storage/' . $image_new_name;
-            $fsize = round(filesize(public_path($filePath)) / 1024);
-    
-            list($width, $height) = getimagesize(public_path($filePath));
-    
-            try {
-                $media = new Media();
-                $media->name = $name;
-                $media->url = $slugify;
-                $media->extention = $extension;
-                $media->fullurl = '/' . $filePath;
-                $media->alt = $name;
-                $media->width = $width ?? '';
-                $media->height = $height ?? '';
-                $media->size = $fsize . 'KB';
-                $media->date = date('Y-m-d H:i:s');
-                $media->save();
-    
-                dd('Image uploaded and saved to DB with ID: ' . $media->id);
-            } catch (\Throwable $e) {
-                dd('DB Error: ' . $e->getMessage());
-            }
+{
+    // Validate incoming file (optional but recommended)
+    $request->validate([
+        'file' => 'required|file|mimes:png,jpg,jpeg,webp,heic,gif|max:10240', // max 10MB for example
+    ]);
+
+    if ($image = $request->file('file')) {
+
+        $names = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+
+        // Check for duplicate name and add timestamp if exists
+        if (Media::where('name', $names)->exists()) {
+            $name = $names . '-' . date('YmdHis');
         } else {
-            dd('No file uploaded');
+            $name = $names;
         }
+
+        $extension = $image->getClientOriginalExtension();
+        $slugify = make_slug($name);
+        $image_new_name = $slugify . '.' . $extension;
+
+        // Move file to public/storage folder
+        $image->move(public_path('storage'), $image_new_name);
+
+        $filePath = public_path('storage/' . $image_new_name);
+
+        // Get image dimensions only for image types
+        if (in_array(strtolower($extension), ['png', 'jpg', 'jpeg', 'webp', 'heic'], true)) {
+            [$width, $height] = getimagesize($filePath);
+        } else {
+            $width = $height = null;
+        }
+
+        $fsize = round(filesize($filePath) / 1024); // filesize in KB
+
+        // Resize and save additional sizes if any
+        if (in_array(strtolower($extension), ['png', 'jpg', 'jpeg', 'webp', 'heic'], true)) {
+            if ($this->sizes) {
+                foreach ($this->sizes as $resize) {
+                    if (!empty($resize['width']) && !empty($resize['height'])) {
+                        // Resize only if target size is smaller than original
+                        if ($resize['width'] < $width && $resize['height'] < $height) {
+                            $originalImage = Image::make($filePath);
+                            $resizedImage = $originalImage->fit((int)$resize['width'], (int)$resize['height'], function ($constraint) {
+                                $constraint->aspectRatio();
+                            });
+                            $resizedFilename = make_slug($name . '-' . $resize['width'] . 'x' . $resize['height']) . '.' . $extension;
+                            $resizedImage->save(public_path('storage/') . $resizedFilename);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Create media record in DB
+        $media = Media::create([
+            'name' => $name,
+            'url' => $slugify,
+            'extention' => $extension,
+            'fullurl' => '/storage/' . $image_new_name,
+            'alt' => $name,
+            'width' => $width ?? '',
+            'height' => $height ?? '',
+            'size' => $fsize . 'KB',
+            'date' => now(),
+        ]);
+
+        // Return success JSON response (adjust as needed)
+        return response()->json([
+            'success' => true,
+            'message' => 'Image uploaded and saved to DB with ID: ' . $media->id,
+            'media' => $media,
+        ]);
     }
-    
+
+    // If no file provided, return error JSON response
+    return response()->json([
+        'success' => false,
+        'message' => 'No image file uploaded',
+    ], 400);
+}
+
+
     /**
      * Display the specified resource.
      */
