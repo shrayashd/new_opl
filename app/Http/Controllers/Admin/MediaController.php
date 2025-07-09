@@ -57,59 +57,41 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-
-        if ($image = $request->file('file')) {
-
-            $names = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
-            if (Media::where('name', $names)->exists()) {
-                $name = $names . '-' . date('YmdHis');
-            } else {
-                $name = $names;
-            }
+        if ($request->hasFile('file')) {
+            $image = $request->file('file');
+            $name = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
             $extension = $image->getClientOriginalExtension();
             $slugify = make_slug($name);
-
             $image_new_name = $slugify . '.' . $extension;
+    
             $image->move(public_path('storage/'), $image_new_name);
-            if (in_array(strtolower($extension), ['png', 'jpg', 'jpeg', 'webp', 'heic'], true)) {
-                list($width, $height) = $image ? getimagesize(public_path('storage/' . $image_new_name)) : [null, null];
+            $filePath = 'storage/' . $image_new_name;
+            $fsize = round(filesize(public_path($filePath)) / 1024);
+    
+            list($width, $height) = getimagesize(public_path($filePath));
+    
+            try {
+                $media = new Media();
+                $media->name = $name;
+                $media->url = $slugify;
+                $media->extention = $extension;
+                $media->fullurl = '/' . $filePath;
+                $media->alt = $name;
+                $media->width = $width ?? '';
+                $media->height = $height ?? '';
+                $media->size = $fsize . 'KB';
+                $media->date = date('Y-m-d H:i:s');
+                $media->save();
+    
+                dd('Image uploaded and saved to DB with ID: ' . $media->id);
+            } catch (\Throwable $e) {
+                dd('DB Error: ' . $e->getMessage());
             }
-            $fsize = round(filesize(public_path('storage/' . $image_new_name)) / 1024);
-
-            $fileName = $image_new_name;
-
-            if (in_array(strtolower($extension), ['png', 'jpg', 'jpeg', 'webp', 'heic'], true)) {
-
-                if ($this->sizes) {
-                    foreach ($this->sizes as $resize) {
-                        if ($resize['width'] && $resize['height']) {
-                            if ($resize['width'] < $width && $resize['height'] < $height) {
-                                $originalImage = Image::make(public_path('/storage/' . $fileName));
-                                $resizedImage = $originalImage->fit((int) $resize['width'], (int) $resize['height'], function ($constraint) {
-                                    $constraint->aspectRatio();
-                                });
-                                $resizedFilename = make_slug($name . '-' . $resize['width'] . 'x' . $resize['height']) . '.' . $extension;
-                                $resizedImage->save(public_path('storage/') . $resizedFilename);
-                            }
-                        }
-                    }
-                }
-            }
-
-            Media::create([
-                'name' => $name,
-                'url' => $slugify,
-                'extention' => $extension,
-                'fullurl' => '/storage/' . $fileName,
-                'alt' => $name,
-                'width' => $width ?? '',
-                'height' => $height ?? '',
-                'size' => (int) $fsize . 'KB',
-                'date' => date('Y-m-d H:i:s')
-            ]);
+        } else {
+            dd('No file uploaded');
         }
     }
-
+    
     /**
      * Display the specified resource.
      */
