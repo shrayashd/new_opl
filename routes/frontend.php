@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', [FrontendController::class, 'home'])->name('home');
 Route::get('/{slug}', [FrontendController::class, 'pagesingle'])->name('pagesingle');
+
+
+
+
 
 Route::get('/departments/{slug}', [FrontendController::class, 'departmentsingle'])->name('departmentsingle');
 
