@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\Admin\ContactsController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;

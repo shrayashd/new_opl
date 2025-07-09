@@ -49,7 +49,9 @@ use App\Http\Controllers\Admin\UserRegisterController;
 | Frontend Routes
 |--------------------------------------------------------------------------
  */
-
+Route::get('/debug-route', function () {
+    return 'Web routes are working';
+});
 
 // Auth::routes();
 Auth::routes(['register' => false]);
@@ -163,3 +165,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('delete-menuitem/{id}/{key}/{in?}', [MenuController::class, 'deleteMenuItem'])->name('admin.menu.deleteitem');
     Route::get('delete-menu/{id}', [MenuController::class, 'destroy'])->name('admin.menu.deletemenu');
 });
+require __DIR__ . '/frontend.php';
