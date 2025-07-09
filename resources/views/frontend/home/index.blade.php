@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                    .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -449,7 +449,7 @@
                                     </a>
                                 </h3>
                                 <p class="feature-text">
-                                    Sed ut perspiciatis unde is tus error sit voluptatem
+                                    Sed ut perspiciatis is tus error sit voluptatem
                                 </p>
                             </div>
                         </div>
