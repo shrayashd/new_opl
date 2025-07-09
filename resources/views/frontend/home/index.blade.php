@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                            .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -470,7 +470,7 @@
                                     </a>
                                 </h3>
                                 <p class="feature-text">
-                                    Sed ut perspiciatis unde omnis is tus error sit voluptatem
+                                    Sed ut perspiciatis omnis is tus error sit voluptatem
                                 </p>
                             </div>
                         </div>
@@ -499,7 +499,7 @@
                                     <h3 class="banner-title">
                                         <a href="#">Skincare & Topicals</a>
                                     </h3>
-                                    <p class="banner-text">Sed ut perspiciatis unde omnis
+                                    <p class="banner-text">Sed ut perspiciatis unde
                                         is tus error sit voluptatem</p>
                                     <a class="banner-link" href="#">
                                         View More
