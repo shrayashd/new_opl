@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -339,7 +339,7 @@
                                 <h3 class="product-title">
                                     <a href="shop-details.html">Full Spectrum CBD Oil 1000 mg (10%)</a>
                                 </h3>
-                                <span class="product-cate">CBD 100MG</span>
+                                <span class="product-cate">CB 100MG</span>
                                 <span class="product-price">$39.00</span>
 
                                 <div class="product-actions">
