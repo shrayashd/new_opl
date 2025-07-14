@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                            .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                        .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -523,7 +523,7 @@
                                         <a href="about.html">Edibles & Drinks</a>
                                     </h3>
                                     <p class="banner-text">Sed ut perspiciatis unde omnis
-                                        is tus error sit voluptatem</p>
+                                        is tus sit voluptatem</p>
                                     <a class="banner-link" href="#">
                                         View More
                                         <img src="{{ asset('frontend/assets/img/icons/arrow-icon-1-1.png') }}"
