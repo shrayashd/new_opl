@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -278,7 +278,7 @@
                                     <h2 class="review-title h3">No.1 ABCD Specialist</h2>
                                     <p class="review-text">
                                         ABC oils, joint & muscle rubs, skin care & cosmetics, edibles, drinks,
-                                        e-, & isolates, vapes & more…
+                                        e-, & isolates, vapes & more
                                     </p>
                                 </div>
                             </div>
