@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -357,7 +357,7 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="d-inline-flex pt-30">
-                        <a class="vs-btn style2" href="products-grid.html">View All Products</a>
+                        <a class="vs-btn style2" href="products-grid.html">View All Product</a>
                     </div>
                 </div>
             </div>
@@ -372,7 +372,7 @@
                 <div class="col-xl-7 col-lg-8">
                     <div class="title-area">
                         <span class="sec-subtitle">What Makes Different?</span>
-                        <h2 class="sec-title">What Makes OHM pharmaceuticals Different?</h2>
+                        <h2 class="sec-title">What Makes OHM pharmaceutical Different?</h2>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -407,7 +407,7 @@
                                     </a>
                                 </h3>
                                 <p class="feature-text">
-                                    Sed perspiciatis is tus error voluptatem
+                                    Sed perspiciatis is error voluptatem
                                 </p>
                             </div>
                         </div>
