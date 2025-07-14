@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -309,7 +309,7 @@
                             <img src="{{ asset('frontend/assets/img/icons/s-1-2.png') }}" alt="icon">
                         </div>
                         <span class="sec-subtitle">Quality Products</span>
-                        <h2 class="sec-title">Trending Products</h2>
+                        <h2 class="sec-title">Trending Product</h2>
                     </div>
                 </div>
             </div>
