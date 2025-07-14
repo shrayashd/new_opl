@@ -3,7 +3,7 @@
     <section class="hero-style1">
         <div class="hero-bg"
             style="background-image: url('{{ asset('frontend/assets/img/bg/bg3
-                                                                                                                                                                                                                                                                                                                                                                                                                        .jpg') }}');">
+                                                                                                                                                                                                                                                                                                                                                                                                                                    .jpg') }}');">
         </div>
 
         <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
@@ -229,7 +229,7 @@
                         </div>
                         <div class="about-body">
                             <p class="about-text">
-                                There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
+                                There are variations of passages of Lorem Ipsum available, bhe mred aln ine form,
                                 by injected humour, or randomised words which don't look even slilievable. If you're going
                                 to
                                 use a passage of variations of passages
